@@ -102,7 +102,7 @@ else {opCode = 2;}
 
 prevA6 = currA6;
 
-  //Memory loop
+  //Memory
   if (i != lasti) {  
     EEPROM.write(addr, i);
     lasti= i;
@@ -176,5 +176,6 @@ prevA6 = currA6;
 
  
 }
+
 
 
