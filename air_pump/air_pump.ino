@@ -114,7 +114,7 @@ prevA6 = currA6;
  percent = i/200.0;
 
  
- u8g2.drawStr(10, 35, String(millis()).c_str()); //i as  a percent
+ u8g2.drawStr(10, 35, String(percent).c_str()); //i as  a percent
  u8g2.drawStr(80, 35, "%"); //i as  a percent
  
   
@@ -179,3 +179,4 @@ prevA6 = currA6;
 
  
 }
+
