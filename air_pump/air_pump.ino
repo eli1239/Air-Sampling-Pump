@@ -36,7 +36,7 @@ void setup() {
   u8g2.setFont(u8g2_font_ncenB14_tr);
 
   PORTA.DIRCLR = PIN3_bm;                    // Input PA3
-  PORTA.PIN4CTRL = PORT_PULLUPEN_bm;         // Enable pull-up
+  PORTA.PIN3CTRL = PORT_PULLUPEN_bm;         // Enable pull-up
   PORTA.DIRCLR = PIN4_bm;                    // Input PA4
   PORTA.PIN4CTRL = PORT_PULLUPEN_bm;         // Enable pull-up
   PORTA.DIRCLR = PIN5_bm;                    // Input PA5
