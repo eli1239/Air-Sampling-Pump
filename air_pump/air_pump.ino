@@ -1,6 +1,5 @@
 #include <avr/interrupt.h>
 #include <EEPROM.h>
-#include <Wire.h>
 #include <U8g2lib.h>
 U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, /* clock=*/ PIN_PC3, /* data=*/ PIN_PC2, /* reset=*/ U8X8_PIN_NONE);
 
@@ -28,8 +27,6 @@ unsigned long timeRemaining= 0;
 unsigned long runTime;
 
 void setup() {
-  // put your setup code here, to run once:
-  Wire.begin(); //Initiailize wire we might not need this
   
   u8g2.begin(); //Start the screen
   u8g2.setFont(u8g2_font_ncenB14_tr);
@@ -179,4 +176,5 @@ prevA6 = currA6;
 
  
 }
+
 
